@@ -30,7 +30,7 @@ namespace KadenZombie8.BIMOS.Editor
         {
             manager = null;
 
-            EditorBuildSettings.TryGetConfigObject(XRGeneralSettings.settingsKey, out XRGeneralSettingsPerBuildTarget buildTargetSettings);
+            EditorBuildSettings.TryGetConfigObject(XRGeneralSettingsPerBuildTarget.k_SettingsKey, out XRGeneralSettingsPerBuildTarget buildTargetSettings);
             if (!buildTargetSettings) return false;
 
             var settings = buildTargetSettings.SettingsForBuildTarget(targetGroup);
